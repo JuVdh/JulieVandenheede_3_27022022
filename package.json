@@ -1,0 +1,11 @@
+{
+  "name": "p3_vandenheede_code",
+  "version": "1.0.0",
+  "description": "ohmyfood website with CSS animations",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:public/css/style.css --style expanded"
+  },
+  "author": "julie vandenheede",
+  "license": "ISC"
+}

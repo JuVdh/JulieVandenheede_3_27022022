@@ -1,0 +1,44 @@
+.bouton
+{
+    display:flex;
+    justify-content: center;
+    margin:auto;
+    border-style: none;
+    background:none;
+    align-items: center;
+   
+    &__fonctionnement
+    {
+        justify-content: flex-start;
+        margin-bottom:20px;
+        
+        @include button-layout(329px,73px,$color-black,$color-fond-grisclair,20px);
+        
+        &--icone{
+            font-size:20px;
+            color:$color-icone;
+           
+            margin-right:30px;
+            
+        }
+
+        &--numbericone{
+            
+            @include button-layout(20px,20px,$color-white,$color-primary,20px);
+            margin-left:-18px;
+            margin-right:30px;
+        }
+        &:hover{
+           
+            background-color: lighten($color-primary,35%);
+
+            .bouton__fonctionnement--icone{
+                color:$color-primary;
+            }
+        }
+    }
+    &__accroche
+    {
+        @include button-layout(218px,51px,$color-white,$color-primary,30px);
+    }
+}
