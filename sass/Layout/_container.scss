@@ -10,12 +10,15 @@
     &--grisclair
     {
         @include container-layout($color-black,$color-fond-grisclair,18px);
-             
+        
+       
         &--centre
         {
             text-align:center;
             @include container-layout($color-black,$color-fond-grisclair,45px);
         }
+
+       
     }
 
     &--formulaire
@@ -29,6 +32,8 @@
     {
         @include container-layout($color-white,$color-fond-grisfonce,18px);
     }
+
+  
 }
 
 
