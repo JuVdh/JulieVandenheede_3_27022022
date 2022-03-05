@@ -4,14 +4,18 @@
     display:flex;
     flex-direction:column;
     justify-content:center;
-    width:375px;
+    width:345px;
+    padding:15px;
     margin: auto;
        
     &--grisclair
     {
         @include container-layout($color-black,$color-fond-grisclair,18px);
         
-       
+        &--menu
+        {
+            height:304px;
+        }
         &--centre
         {
             text-align:center;
@@ -23,14 +27,19 @@
 
     &--formulaire
     {
+        
         flex-direction: row;
         height:51px;
+        
         @include container-layout($color-black,$color-fond-grismoyen,0px);
     }
 
     &--grisfonce
     {
         @include container-layout($color-white,$color-fond-grisfonce,18px);
+        width:auto;
+
+        
     }
 
   

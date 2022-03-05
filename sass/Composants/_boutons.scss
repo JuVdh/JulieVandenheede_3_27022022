@@ -41,4 +41,8 @@
     {
         @include button-layout(218px,51px,$color-white,$color-primary,30px);
     }
+    &__menu
+    {
+        @include button-layout(315px,63px,&$color-black,$color-white,20px);
+    }
 }
