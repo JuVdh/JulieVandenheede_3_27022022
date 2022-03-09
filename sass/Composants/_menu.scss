@@ -2,7 +2,8 @@
 {
     box-sizing:border-box;
     display:flex;
-    justify-content: space-between;
+    justify-content: center;
+    
     /*flex-direction:column;*/
     padding:15px;
     /*width:375px;*/
@@ -25,10 +26,22 @@
     
     &--grisclair
     {
+        
         background-color: $color-fond-grisclair;
         
         width:345px;
+        padding:15px;
     }
+
+}
+
+.menu__duo
+{
+    box-sizing: border-box;
+    display: flex;
+    flex:0 1 47%;
+    justify-content: center;
+    flex-wrap:wrap;
 }
 
 .menu__photo

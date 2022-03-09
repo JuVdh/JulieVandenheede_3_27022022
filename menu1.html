@@ -20,28 +20,54 @@
                 <img class="logo" src="public/img/logo/ohmyfood.png" alt="logo">
             </header>
             <section class="page-menu">
-            <section class="menu">
+            
+            <div class="menu__duo">
+            <div class="menu">
+                
                 <div class="menu__photo">
                     <img src="public/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo restaurant la palette du gout"/>
                 </div>
                 <div class="menu__description">
                     <p class="title">La palette du goût</p>
                 </div>
-            </section>   
+            </div>   
             
-            <section class="menu menu--grisclair">
+            <div class="menu menu--grisclair">
                 <p>ENTREES</p>
                 <div class="bouton bouton__menu">
-                    <p>Fricassée d'escargot</p>
+                    <div class="bouton bouton__menu bouton__menu--description">
+                        <span>Fricassée d'escargot</span>
+                        <span>Au piment d'espelette</span>
+                    </div>
+                    <div class="bouton bouton__menu bouton__menu--prix">
+                        <span>25€</span>
+                    </div>
                 </div>
                 <div class="bouton bouton__menu">
-                    <p>Foie gras de canard mi-cuit</p>
+                    <div class="bouton bouton__menu bouton__menu--description">
+                        <span>Foie gras de canard mi-cuit</span>
+                        <span>Et ses copeaux de truffe noire</span>
+                    </div>
+                    <div class="bouton bouton__menu bouton__menu--prix">
+                        <span>35€</span>
+                    </div>
                 </div>
                 <div class="bouton bouton__menu">
-                    <p>Oeuf au plat</p>
+                    <div class="bouton bouton__menu bouton__menu--description">
+                        <span>Oeuf au plat</span>
+                        <!--<p class="overflow-ellipsis">Assaisonné à la truffe sur lit de caviar</p>-->
+                        <span>Assaisonné à la truffe sur lit de caviar</span>
+                    </div>
+                    <a href="#"><div class="bouton bouton__menu bouton__menu--prix">
+                        <span>20€</span>
+                        <i class="fas fa-check-circle icone-check"></i>
+                    </div></a>
                 </div>
-            </section>
-            <section class="menu menu--grisclair">
+            </div>
+            </div>
+            <div class="menu__duo">
+
+            <div class="menu menu--grisclair">
                 <p>PLATS</p>
                 <div class="bouton bouton__menu">
                     <p>Filet de boeuf aux herbes</p>
@@ -53,8 +79,8 @@
                     <p>Filet de Turbot</p>
                 </div>
 
-            </section>
-            <section class="menu menu--grisclair">
+            </div>
+            <div class="menu menu--grisclair">
                 <p>DESSERTS</p>
                 <div class="bouton bouton__menu">
                     <p>Paris-Brest</p>
@@ -65,7 +91,8 @@
                 <div class="bouton bouton__menu">
                     <p>Mousse au chocolat</p>
                 </div>
-            </section>
+            </div>
+            </div>
             </section>
             
             <footer class="conteneur-principal conteneur-principal--grisfonce">

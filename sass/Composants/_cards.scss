@@ -25,7 +25,7 @@
             
         }
     }
-       
+    
     &__description
     {
         flex-direction:row;
@@ -37,6 +37,20 @@
         
     }
    
+}
+
+
+.carte-restaurant--duo
+{
+    position:relative;
+    display: flex;
+   
+    flex:0 1 47%;
+  
+   
+    justify-content:space-around;
+    flex-wrap:wrap;
+    
 }
 
 .carte-restaurant__photo--nouveau

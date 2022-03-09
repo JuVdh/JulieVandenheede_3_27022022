@@ -1,37 +1,59 @@
 .conteneur-principal
 {
+    
+
     box-sizing:border-box;
     display:flex;
+    
     flex-direction:column;
     justify-content:center;
     width:345px;
     padding:15px;
-    margin: auto;
+    margin: auto; 
        
     &--grisclair
     {
+        position:relative;
         @include container-layout($color-black,$color-fond-grisclair,18px);
         
+       
+       
         &--menu
         {
             height:304px;
         }
         &--centre
         {
+            position: relative;
+            
             text-align:center;
             @include container-layout($color-black,$color-fond-grisclair,45px);
+           
+        }
+        &--title
+        {
+            position: absolute;
+            top:-50px;
+           
+            
         }
 
+        
        
     }
 
     &--formulaire
     {
         
+      position: absolute;
+      top:0;
+      left: 0;
         flex-direction: row;
         height:51px;
         
         @include container-layout($color-black,$color-fond-grismoyen,0px);
+
+       
     }
 
     &--grisfonce
@@ -45,13 +67,27 @@
   
 }
 
+.conteneur-principal--duo
+{
+    box-sizing: border-box;
+    display: flex;
+    flex:0 1 47%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    margin: auto;
+    
+}
+
 
 #position{
+   
     border-style: none;
     background:none;
 }
 
 #ville{
+    
     width:150px;
     border-style: none;
     background:none;

@@ -25,7 +25,7 @@
         &--numbericone{
             
             @include button-layout(20px,20px,$color-white,$color-primary,20px);
-            margin-left:-18px;
+            margin-left:-10px;
             margin-right:30px;
         }
         &:hover{
@@ -44,5 +44,58 @@
     &__menu
     {
         @include button-layout(315px,63px,&$color-black,$color-white,20px);
+       
+        justify-content: space-around;
+        align-items: flex-start;
+        &--description
+        {
+            box-sizing: border-box;
+            width:262px;
+            flex-direction: column;
+            margin-left: 10px;
+            padding-top:10px;
+            padding-bottom:10px;
+            
+            
+        }
+
+        &--prix
+        {
+            box-sizing: border-box;
+            width:53px;
+            
+            flex-direction: column;
+           justify-content: flex-end;
+           padding:5px;
+           border-radius:0px 20px 20px 0px;
+           
+           i{
+               display:none;
+           }
+
+           &:active
+           {
+               background-color: $color-tertiary;
+               justify-content: center;
+                align-items: center;
+
+                span{
+                    display:none;
+                }
+
+                i{
+                    display:flex;
+                    
+                }
+           }
+           
+            
+        }
+
+       
+
+        
     }
 }
+
+
