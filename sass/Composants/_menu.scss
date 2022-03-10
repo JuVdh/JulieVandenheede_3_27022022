@@ -3,13 +3,13 @@
     box-sizing:border-box;
     display:flex;
     justify-content: center;
-    
-    /*flex-direction:column;*/
     padding:15px;
-    /*width:375px;*/
     max-width:1920px;
     margin:auto;
     flex-wrap: wrap;
+    @media(min-width:737px){
+        justify-content: space-around;
+    }
 }
 
 
@@ -20,8 +20,11 @@
     flex-direction: column;
     width:345px;
     height:304px;
+    justify-content: space-between;
     
-    
+    @media(min-width:737px){
+        margin-bottom: 20px;
+    }
    
     
     &--grisclair
@@ -31,6 +34,10 @@
         
         width:345px;
         padding:15px;
+
+       @media(min-width:737px){
+           border-radius: 20px;
+       }
     }
 
 }
@@ -42,6 +49,10 @@
     flex:0 1 47%;
     justify-content: center;
     flex-wrap:wrap;
+    @media(min-width: 1516px){
+        justify-content: space-between;
+        margin-left: auto;
+    }
 }
 
 .menu__photo
@@ -70,7 +81,7 @@
     border-radius: 40px 40px 0px 0px;
     background-color: $color-fond-grisclair;
     margin-top:-50px;
-
+   
 }
 
 /*.menu

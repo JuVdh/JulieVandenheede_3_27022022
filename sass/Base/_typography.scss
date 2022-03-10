@@ -1,10 +1,11 @@
 a{
     text-decoration:none;
+    color:$color-black;
 }
 
 
 
-.title{
+h1{
     font-family:'Shrikhand',sans-serif;
     font-size: 28px;
     
@@ -20,6 +21,10 @@ footer a{
     color:$color-white;
     margin-bottom:5px;
     
+}
+
+footer h1{
+    font-size:20px;
 }
 
 .icone-check
