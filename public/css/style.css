@@ -44,6 +44,16 @@ body {
     opacity: 0;
   }
 }
+@keyframes delayed-print {
+  0% {
+    transform: translateY(-20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 a {
   text-decoration: none;
   color: black;
@@ -140,6 +150,15 @@ footer h1 {
   border-radius: 20px;
   justify-content: space-around;
   align-items: flex-start;
+}
+.bouton__menu--anim-1 {
+  animation: delayed-print 1000ms ease-in-out 500ms both;
+}
+.bouton__menu--anim-2 {
+  animation: delayed-print 1000ms ease-in-out 1000ms both;
+}
+.bouton__menu--anim-3 {
+  animation: delayed-print 1000ms ease-in-out 1500ms both;
 }
 .bouton__menu--description {
   box-sizing: border-box;

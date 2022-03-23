@@ -55,7 +55,13 @@
        
         justify-content: space-around;
         align-items: flex-start;
+    
        
+        @for $i from 1 through 3{
+            &--anim-#{$i}{
+                animation: delayed-print 1000ms ease-in-out 500ms*$i both;
+            }
+        }
         
         
         &--description
