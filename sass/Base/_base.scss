@@ -7,6 +7,7 @@ body{
 
 }
 
+
 .loader-container {
     position: fixed;
     top: 0;
@@ -35,6 +36,7 @@ body{
    
     animation: spin 2s linear 1;
     animation-fill-mode: forwards;
+ 
     
     
     
@@ -45,4 +47,4 @@ body{
     100% { transform: rotate(360deg); opacity:0;}
   }
 
- 
+  

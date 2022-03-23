@@ -57,6 +57,7 @@
            margin:auto;
             width:50px;
             border-radius: 0px 0px 10px 0px;
+            
            
 
             &:hover{
@@ -64,6 +65,8 @@
                     opacity:1;
                     transform:scale(1);
                 }
+
+                
             }
 
             &__bg{
@@ -93,7 +96,7 @@
 {
     position:relative;
     display: flex;
-   
+   flex-direction: row;
     flex:0 1 47%;
   
    
