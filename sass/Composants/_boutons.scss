@@ -6,12 +6,14 @@
     border-style: none;
     background:none;
     align-items: center;
+  
     
    
     &__fonctionnement
     {
         justify-content: flex-start;
         margin-bottom:20px;
+       
         
         @include button-layout(329px,73px,$color-black,$color-fond-grisclair,20px);
         
