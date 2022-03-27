@@ -98,7 +98,15 @@ footer h1 {
   overflow: hidden;
 }*/
 .overflow-ellipsis {
+  height: 19px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .bouton {
@@ -197,12 +205,8 @@ footer h1 {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.bouton__menu--description p {
+.bouton__menu--description h4 {
   margin-top: 0;
-  /*white-space: nowrap;
-  overflow: hidden;*/
-}
-.bouton__menu--description h3 {
   margin-bottom: 5px;
 }
 .bouton__menu--prix {
@@ -210,32 +214,21 @@ footer h1 {
   flex-direction: column;
   justify-content: flex-end;
   width: 53px;
-  padding: 5px;
+  padding: 10px;
   border-radius: 0px 20px 20px 0px;
   position: relative;
   z-index: 1;
-  /*&:hover
-  {
-      background-color: $color-tertiary;
-      justify-content: center;
-       align-items: center;
-
-       b{
-           display:none;
-       }
-
-       i{
-           display:flex;
-
-       }
-  }*/
 }
 .bouton__menu--prix:hover b {
-  transform: translateX(-120%);
+  transform: translateX(-53px);
   transition: transform 500ms ease-in-out;
 }
 .bouton__menu--prix:hover .bouton__menu--prix__bg {
   opacity: 1;
+}
+.bouton__menu--prix:hover .bouton__menu--prix__bg .icone-check {
+  transform: rotate(360deg);
+  transition: transform 500ms ease-in-out;
 }
 .bouton__menu--prix__bg {
   box-sizing: border-box;
@@ -469,7 +462,7 @@ svg {
     100% {fill-opacity: 1;}
 }*/
 path {
-  stroke-width: 2px;
+  stroke-width: 1.5px;
   stroke: black;
   stroke-opacity: 1;
   fill: none;
@@ -502,12 +495,19 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 345px;
+  /*width:345px;*/
+  width: 100%;
   padding: 15px;
   margin: auto;
 }
+@media (min-width: 737px) {
+  .conteneur-principal {
+    width: 345px;
+  }
+}
 .conteneur-principal--grisclair {
   position: relative;
+  width: 100%;
   color: black;
   background-color: #f6f6f6;
   padding: 18px;
@@ -515,10 +515,12 @@ header {
 @media (min-width: 737px) {
   .conteneur-principal--grisclair {
     background: none;
+    width: 345px;
   }
 }
 .conteneur-principal--grisclair--menu {
   height: 304px;
+  width: 345px;
 }
 .conteneur-principal--grisclair--centre {
   position: relative;
@@ -530,6 +532,7 @@ header {
 @media (min-width: 737px) {
   .conteneur-principal--grisclair--centre {
     border-radius: 20px;
+    width: 345px;
   }
 }
 .conteneur-principal--grisclair--title {
@@ -553,6 +556,7 @@ header {
 @media (min-width: 737px) {
   .conteneur-principal--formulaire {
     border-radius: 20px 20px 0px 0px;
+    width: 345px;
   }
 }
 .conteneur-principal--grisfonce {

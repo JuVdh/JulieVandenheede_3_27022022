@@ -71,19 +71,17 @@
             box-sizing: border-box;
             width:262px;
             flex-direction: column;
+            
            
             margin-left: 10px;
             padding-top:10px;
             padding-bottom:10px;
-            & p{
-                margin-top:0;
-                /*white-space: nowrap;
-                overflow: hidden;*/
+           
+            
                
-               
-                
-            }
-            & h3{
+            
+            h4{
+                margin-top: 0;
                 margin-bottom: 5px;
             }
         
@@ -96,7 +94,7 @@
            flex-direction: column;
            justify-content: flex-end;
             width:53px;
-           padding:5px;
+           padding:10px;
            
            border-radius:0px 20px 20px 0px;
 
@@ -106,20 +104,31 @@
            
            &:hover{
 
-            & b{
-               transform:translateX(-120%);
+            b{
+               transform:translateX(-53px);
                transition:transform 500ms ease-in-out;
             }
               
+            
 
-               .bouton__menu--prix__bg{
-                opacity:1;
+            .bouton__menu--prix__bg{
                 
-               }
+            opacity:1;
+                
+            .icone-check{
+                transform:rotate(360deg);
+                transition:transform 500ms ease-in-out;
+                }
+                
+            }
+
+            
+
+            }
 
               
                 
-           }
+           
            
            &__bg{
             box-sizing: border-box;
@@ -143,29 +152,10 @@
             
            
             }
-
-           /*&:hover
-           {
-               background-color: $color-tertiary;
-               justify-content: center;
-                align-items: center;
-
-                b{
-                    display:none;
-                }
-
-                i{
-                    display:flex;
-                    
-                }
-           }*/
-           
+            
             
         }
 
-       
-
-        
     }
 }
 

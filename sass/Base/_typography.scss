@@ -32,7 +32,7 @@ footer h1{
     font-size:20px;
     color:$color-white;
     background-color: $color-tertiary;
-  
+    
    
 }
 
@@ -42,8 +42,12 @@ footer h1{
 }*/
 
 .overflow-ellipsis{
-    
-   
-    
-    text-overflow:ellipsis;
+    height: 19px; 
+    width: 100%; 
+    overflow: hidden; position: relative; display: inline-block; 
+    margin-top: 0;
+    margin-bottom: 0;
+    text-overflow: ellipsis; white-space: nowrap;
+
+
 }

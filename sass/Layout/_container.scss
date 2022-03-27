@@ -4,25 +4,33 @@
     display:flex;
     flex-direction:column;
     justify-content:center;
-    width:345px;
+    /*width:345px;*/
+    width:100%;
     padding:15px;
     margin: auto; 
- 
-    
+    @media(min-width:737px){
+        
+        width:345px;
+    }        
     
     &--grisclair
     {
         position:relative;
+        width:100%;
         
         @include container-layout($color-black,$color-fond-grisclair,18px);
+        
                
         @media(min-width:737px){
             background:none;
+            width:345px;
+            
         }
              
         &--menu
         {
             height:304px;
+            width:345px;
         }
 
         &--centre
@@ -33,6 +41,7 @@
 
             @media(min-width:737px){
                 border-radius: 20px;
+                width:345px;
             }
            
         }
@@ -59,6 +68,7 @@
 
         @media(min-width:737px){
             border-radius: 20px 20px 0px 0px;
+            width:345px;
         }
     }
 
