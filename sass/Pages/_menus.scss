@@ -1,0 +1,94 @@
+.plat{
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width:315px;
+    height:63px;
+    color:$color-black;
+    background-color: $color-white;
+    border-radius:20px;
+
+    @for $i from 1 through 10{
+        &--anim-#{$i}{
+            animation: delayed-print 1000ms ease-in-out 500ms*$i both;
+        }
+    }
+
+    &__description{
+        box-sizing: border-box;
+        width:262px;
+        flex-direction: column;
+        margin-left: 10px;
+        padding-top:10px;
+        padding-bottom:10px;
+        h4,p{
+            width:262px;
+        }
+    }
+
+    &__prix{        
+        box-sizing: border-box;
+        flex-direction: column;
+        justify-content: flex-end;
+        width:53px;
+        padding:10px;
+        border-radius:0px 20px 20px 0px;
+    }
+
+    &__check{
+        box-sizing: border-box;
+        min-width:53px;
+        padding:5px;
+        border-radius:0px 20px 20px 0px;
+        opacity:0;
+        background-color: $color-tertiary;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.plat:hover{
+
+    .overflow-ellipsis{
+        width:209px;
+    }
+ 
+    .plat__prix{
+        transform:translateX(-53px);
+        transition:transform 500ms ease-in-out;
+    }
+         
+    .plat__check{
+        opacity:1;
+        transform:translateX(-53px);
+        transition:transform 500ms ease-in-out;
+        
+        .icone-check{
+            transform:rotate(360deg);
+            transition:transform 500ms ease-in-out;
+        }
+            
+    }   
+}
+
+
+
+              
+                
+           
+           
+           
+
+
+
+
+
+
+
+    
+       
+        
+        
+        
+        
+        

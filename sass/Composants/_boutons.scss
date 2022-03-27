@@ -6,31 +6,26 @@
     border-style: none;
     background:none;
     align-items: center;
-  
     
-   
     &__fonctionnement
     {
         justify-content: flex-start;
         margin-bottom:20px;
-       
-        
+             
         @include button-layout(329px,73px,$color-black,$color-fond-grisclair,20px);
         
         &--icone{
             font-size:20px;
             color:$color-icone;
-           
             margin-right:30px;
-            
         }
 
         &--numbericone{
-            
             @include button-layout(20px,20px,$color-white,$color-primary,20px);
             margin-left:-10px;
             margin-right:30px;
         }
+
         &:hover{
            
             background-color: lighten($color-primary,35%);
@@ -40,9 +35,9 @@
             }
         }
     }
+
     &--degrade
     {
-        
         @include button-layout(218px,51px,$color-white,$color-primary,30px);
         background:linear-gradient($color-secondary,$color-primary);
         opacity:1;
@@ -51,112 +46,6 @@
             opacity:0.7;
         }
     }
-    &__menu
-    {
-        @include button-layout(315px,63px,&$color-black,$color-white,20px);
-       
-        justify-content: space-around;
-        align-items: flex-start;
-    
-       
-        @for $i from 1 through 10{
-            &--anim-#{$i}{
-                animation: delayed-print 1000ms ease-in-out 500ms*$i both;
-            }
-        }
-        
-        
-        &--description
-        {
-            box-sizing: border-box;
-            width:262px;
-            flex-direction: column;
-            
-           
-            margin-left: 10px;
-            padding-top:10px;
-            padding-bottom:10px;
-           
-            
-               
-            
-            h4{
-                margin-top: 0;
-                margin-bottom: 5px;
-            }
-        
-            
-        }
-
-        &--prix
-        {
-           box-sizing: border-box;
-           flex-direction: column;
-           justify-content: flex-end;
-            width:53px;
-           padding:10px;
-           
-           border-radius:0px 20px 20px 0px;
-
-           position:relative;
-            z-index:1;
-          
-           
-           &:hover{
-
-            b{
-               transform:translateX(-53px);
-               transition:transform 500ms ease-in-out;
-            }
-              
-            
-
-            .bouton__menu--prix__bg{
-                
-            opacity:1;
-                
-            .icone-check{
-                transform:rotate(360deg);
-                transition:transform 500ms ease-in-out;
-                }
-                
-            }
-
-            
-
-            }
-
-              
-                
-           
-           
-           &__bg{
-            box-sizing: border-box;
-           
-            width:53px;
-           padding:5px;
-           
-           
-           border-radius:0px 20px 20px 0px;
-
-            position:absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            z-index:-1;
-            opacity:0;
-            background-color: $color-tertiary;
-            justify-content: center;
-            align-items: center;
-            
-           
-            }
-            
-            
-        }
-
-    }
 }
-
+  
 

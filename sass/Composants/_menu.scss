@@ -73,47 +73,64 @@
 {
    box-sizing: border-box;
     display: flex;
-    flex-direction: column;
+    /*flex-direction: column;*/
     justify-content: space-around;
+    align-items: center;
     width:345px;
     height:105px;
-    padding-left: 20px;
+    padding-left: 10px;
     border-radius: 40px 40px 0px 0px;
     background-color: $color-fond-grisclair;
     margin-top:-50px;
    
+    &--texte{
+        border-radius: 0px 0px 0px 10px;
+        /*padding-left: 20px;*/
+        /*width:239px;*/
+        width:295px;
+       
+       
+        /*h1{
+            margin-bottom: 5px;
+        }*/
+    }
+
+    &--favori{
+        position:relative;
+        z-index:1;
+        margin:auto;
+        width:50px;
+        border-radius: 0px 0px 10px 0px;
+         
+        &:hover{
+
+            path{
+                stroke-opacity: 0;
+            }
+            .menu__description--favori__bg{
+                opacity:1;
+                transform:scale(1);
+            }
+        }
+
+        &__bg{
+               
+            transform:scale(0);
+            transform-origin: center bottom;
+            position:absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index:-1;
+            opacity:0;
+                
+            transition:transform 1000ms ease-out;
+
+            path{
+                fill:url(#colorGradient);
+            }
+        }
+    }
 }
 
-/*.menu
-{   
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    width:375px;margin:15px;
-        margin:auto;
-        
-        background-color: $color-fond-grisclair;
-
-    &__photo
-    {
-        width:375px;
-       
-     
-       
-        object-fit:cover;
-        
-        
-    }
-
-    &__description
-    {
-        width:375px;
-        height:90px;
-        
-        /*bottom:-30px;*/
-        /*bottom:0;
-        border-radius: 40px 40px 0px 0px;
-        background-color: $color-fond-grisclair;
-        padding-left:18px;
-    }
-}*/
