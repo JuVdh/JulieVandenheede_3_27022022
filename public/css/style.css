@@ -173,7 +173,7 @@ footer h1 {
   flex-direction: column;
   align-self: center;
   margin-bottom: 18px;
-  box-shadow: 0px 4px 15px 1px #e3e3e3;
+  box-shadow: 0px 4px 15px 1px #cacaca;
   border-radius: 10px 10px 10px 10px;
 }
 .carte-restaurant__photo {
@@ -425,6 +425,7 @@ header {
   width: 100%;
   padding: 15px;
   margin: auto;
+  background-color: white;
 }
 @media (min-width: 737px) {
   .conteneur-principal {
@@ -462,7 +463,8 @@ header {
   }
 }
 .conteneur-principal--grisclair--title {
-  background: none;
+  /*background:none;*/
+  width: 100%;
 }
 @media (min-width: 707px) {
   .conteneur-principal--grisclair--title {
@@ -494,6 +496,7 @@ header {
 
 .conteneur-principal--duo {
   box-sizing: border-box;
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex: 0 1 47%;
@@ -501,6 +504,12 @@ header {
   align-items: center;
   flex-wrap: wrap;
   margin: auto;
+  background-color: #f6f6f6;
+}
+@media (min-width: 737px) {
+  .conteneur-principal--duo {
+    background: none;
+  }
 }
 
 #position {
