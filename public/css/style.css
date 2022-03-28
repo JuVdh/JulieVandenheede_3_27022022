@@ -96,12 +96,10 @@ footer h1 {
   font-size: 20px;
   color: white;
   background-color: #99E2D0;
+  transform: rotate(0);
+  transition: transform 500ms ease-in-out;
 }
 
-/*p{
-    white-space: nowrap;
-  overflow: hidden;
-}*/
 .overflow-ellipsis {
   height: 19px;
   width: 262px;
@@ -112,6 +110,7 @@ footer h1 {
   margin-bottom: 0;
   text-overflow: ellipsis;
   white-space: nowrap;
+  transition: width 500ms ease-in-out;
 }
 
 .bouton {
@@ -121,6 +120,7 @@ footer h1 {
   border-style: none;
   background: none;
   align-items: center;
+  box-shadow: 0px 4px 15px 1px #cacaca;
 }
 .bouton__fonctionnement {
   justify-content: flex-start;
@@ -159,9 +159,12 @@ footer h1 {
   border-radius: 30px;
   background: linear-gradient(#FF79DA, #9356DC);
   opacity: 1;
+  box-shadow: 0px 4px 15px 1px #cacaca;
+  transition: box-shadow 500ms ease-in-out;
 }
 .bouton--degrade:hover {
   opacity: 0.7;
+  box-shadow: 0px 4px 15px 8px #cacaca;
 }
 
 .carte-restaurant {
@@ -614,16 +617,20 @@ header {
   width: 53px;
   padding: 10px;
   border-radius: 0px 20px 20px 0px;
+  transform: translateX(0);
+  transition: transform 500ms ease-in-out;
 }
 .plat__check {
   box-sizing: border-box;
   min-width: 53px;
-  padding: 5px;
   border-radius: 0px 20px 20px 0px;
-  opacity: 0;
+  opacity: 1;
   background-color: #99E2D0;
   justify-content: center;
   align-items: center;
+  transform-origin: right center;
+  transform: scale(0);
+  transition: transform 500ms ease-in-out;
 }
 
 .plat:hover .overflow-ellipsis {
@@ -631,16 +638,13 @@ header {
 }
 .plat:hover .plat__prix {
   transform: translateX(-53px);
-  transition: transform 500ms ease-in-out;
 }
 .plat:hover .plat__check {
-  opacity: 1;
-  transform: translateX(-53px);
+  transform: translateX(-53px) scale(1);
   transition: transform 500ms ease-in-out;
 }
 .plat:hover .plat__check .icone-check {
   transform: rotate(360deg);
-  transition: transform 500ms ease-in-out;
 }
 
 /*# sourceMappingURL=style.css.map */

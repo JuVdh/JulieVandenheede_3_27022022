@@ -33,18 +33,23 @@
         width:53px;
         padding:10px;
         border-radius:0px 20px 20px 0px;
+        transform:translateX(0);
+        transition: transform 500ms ease-in-out;
     }
 
+   
     &__check{
-        box-sizing: border-box;
+        box-sizing:border-box;
         min-width:53px;
-        padding:5px;
         border-radius:0px 20px 20px 0px;
-        opacity:0;
+        opacity:1;
         background-color: $color-tertiary;
         justify-content: center;
         align-items: center;
-    }
+        transform-origin: right center;
+        transform:scale(0);
+        transition:transform 500ms ease-in-out;
+       }
 }
 
 .plat:hover{
@@ -55,20 +60,17 @@
  
     .plat__prix{
         transform:translateX(-53px);
-        transition:transform 500ms ease-in-out;
     }
-         
+   
     .plat__check{
-        opacity:1;
-        transform:translateX(-53px);
-        transition:transform 500ms ease-in-out;
         
+        transform:translateX(-53px) scale(1);
+        transition:transform 500ms ease-in-out;
+
         .icone-check{
             transform:rotate(360deg);
-            transition:transform 500ms ease-in-out;
         }
-            
-    }   
+    }
 }
 
 
