@@ -280,7 +280,8 @@ footer h1 {
   display: flex;
   flex-direction: column;
   width: 345px;
-  height: 304px;
+  /*height:304px;*/
+  height: 387px;
   justify-content: space-between;
 }
 @media (min-width: 737px) {
@@ -316,12 +317,14 @@ footer h1 {
 .menu__photo {
   box-sizing: border-box;
   align-self: flex-start;
-  height: 250px;
+  /*height:250px;*/
+  height: 333px;
 }
 
 .menu__photo img {
   width: 345px;
-  height: 250px;
+  /*height:250px;*/
+  height: 333px;
   object-fit: cover;
 }
 
