@@ -20,8 +20,9 @@
     flex-direction: column;
     width:345px;
     /*height:304px;*/
-    height:387px;
+    /*height:387px;*/
     justify-content: space-between;
+  
     
     @media(min-width:737px){
         margin-bottom: 20px;
@@ -60,16 +61,22 @@
 {
     box-sizing: border-box;
     align-self: flex-start;
-    /*height:250px;*/
-    height:333px;
+    height:250px;
+    /*height:333px;*/
+    @media(min-width: 1516px){
+        height:333px;
+    }
 }
 
 .menu__photo img
 {
     width:345px;
-    /*height:250px;*/
-    height:333px;
+    height:250px;
+    /*height:333px;*/
     object-fit: cover;
+    @media(min-width: 1516px){
+        height:333px;
+    }
 }
 
 .menu__description
