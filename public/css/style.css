@@ -1,49 +1,9 @@
-/*@mixin button-hover($background-color:$color-primary,$color:$color-icone){
-    background-color:lighten($color-primary,35%);
-    color:$color-primary;
-}*/
 body {
   max-width: 1920px;
   margin: auto;
   font-family: "Roboto", sans-serif;
 }
 
-.loader-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-
-.loader {
-  border: 16px solid #f3f3f3;
-  border-top: 16px solid #9356DC;
-  border-bottom: 16px solid #FF79DA;
-  border-left: 16px solid #99E2D0;
-  border-right: 16px solid #99E2D0;
-  border-radius: 50%;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  z-index: -1;
-  width: 120px;
-  height: 120px;
-  animation: spin 2s linear 1;
-  animation-fill-mode: forwards;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-    opacity: 1;
-  }
-  100% {
-    transform: rotate(360deg);
-    opacity: 0;
-  }
-}
 @keyframes delayed-print {
   0% {
     transform: translateY(-20%);
@@ -52,14 +12,6 @@ body {
   100% {
     transform: translateY(0);
     opacity: 1;
-  }
-}
-@keyframes filled-heart {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
   }
 }
 a {
@@ -90,6 +42,18 @@ footer a {
 
 footer h1 {
   font-size: 20px;
+}
+
+.titre__souligne--vert {
+  width: 38px;
+  overflow: visible;
+  border-bottom: 3px solid #99E2D0;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+.titre__souligne--vert p {
+  margin-bottom: 10px;
+  margin-top: 0;
 }
 
 .icone-check {
@@ -125,6 +89,7 @@ footer h1 {
 .bouton__fonctionnement {
   justify-content: flex-start;
   margin-bottom: 20px;
+  font-weight: bold;
   width: 329px;
   height: 73px;
   color: black;
@@ -133,15 +98,18 @@ footer h1 {
 }
 .bouton__fonctionnement--icone {
   font-size: 20px;
+  width: 20px;
+  height: 20px;
   color: #7e7e7e;
   margin-right: 30px;
 }
 .bouton__fonctionnement--numbericone {
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   color: white;
   background-color: #9356DC;
-  border-radius: 20px;
+  border-radius: 25px;
+  font-size: 15px;
   margin-left: -10px;
   margin-right: 30px;
 }
@@ -160,11 +128,12 @@ footer h1 {
   background: linear-gradient(#FF79DA, #9356DC);
   opacity: 1;
   box-shadow: 0px 4px 15px 1px #cacaca;
-  transition: box-shadow 500ms ease-in-out;
+  transition: box-shadow 200ms ease-in-out;
 }
 .bouton--degrade:hover {
   opacity: 0.7;
-  box-shadow: 0px 4px 15px 8px #cacaca;
+  box-shadow: 0px 4px 15px 8px #979797;
+  cursor: pointer;
 }
 
 .carte-restaurant {
@@ -213,6 +182,9 @@ footer h1 {
   margin: auto;
   width: 50px;
   border-radius: 0px 0px 10px 0px;
+}
+.carte-restaurant__description--favori:hover {
+  cursor: pointer;
 }
 .carte-restaurant__description--favori:hover path {
   stroke-opacity: 0;
@@ -264,8 +236,8 @@ footer h1 {
   box-sizing: border-box;
   display: flex;
   justify-content: center;
-  padding: 15px;
   max-width: 1920px;
+  width: 100%;
   margin: auto;
   flex-wrap: wrap;
 }
@@ -279,37 +251,44 @@ footer h1 {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  width: 345px;
-  /*height:304px;*/
-  /*height:387px;*/
+  width: 100%;
   justify-content: space-between;
 }
 @media (min-width: 737px) {
   .menu {
+    width: 345px;
     margin-bottom: 20px;
   }
 }
 .menu--grisclair {
   background-color: #f6f6f6;
-  width: 345px;
+  width: 100%;
   padding: 15px;
 }
 @media (min-width: 737px) {
   .menu--grisclair {
     border-radius: 20px;
+    width: 345px;
+    padding: 15px;
   }
 }
 
 .menu__duo {
   box-sizing: border-box;
   display: flex;
-  flex: 0 1 47%;
+  width: 100%;
   justify-content: center;
   flex-wrap: wrap;
 }
-@media (min-width: 1516px) {
+@media (min-width: 737px) {
   .menu__duo {
-    justify-content: space-between;
+    width: 345px;
+    flex: 0 1 50%;
+  }
+}
+@media (min-width: 1380px) {
+  .menu__duo {
+    justify-content: space-around;
     margin-left: auto;
   }
 }
@@ -317,54 +296,51 @@ footer h1 {
 .menu__photo {
   box-sizing: border-box;
   align-self: flex-start;
-  height: 250px;
-  /*height:333px;*/
+  height: 305px;
 }
-@media (min-width: 1516px) {
+@media (min-width: 737px) {
   .menu__photo {
-    height: 333px;
+    height: 340px;
   }
 }
 
 .menu__photo img {
-  width: 345px;
-  height: 250px;
-  /*height:333px;*/
+  width: 100%;
   object-fit: cover;
 }
-@media (min-width: 1516px) {
+@media (min-width: 737px) {
   .menu__photo img {
-    height: 333px;
+    width: 345px;
+    height: 340px;
   }
+}
+
+.menu__photo--decale {
+  object-position: 0 -90px;
+  object-fit: cover;
 }
 
 .menu__description {
   box-sizing: border-box;
   display: flex;
-  /*flex-direction: column;*/
+  width: 100%;
   justify-content: space-around;
+  text-align: center;
   align-items: center;
-  width: 345px;
   height: 105px;
-  padding-left: 10px;
   border-radius: 40px 40px 0px 0px;
   background-color: #f6f6f6;
-  margin-top: -50px;
+  margin-top: -105px;
 }
 .menu__description--texte {
   border-radius: 0px 0px 0px 10px;
-  /*padding-left: 20px;*/
-  /*width:239px;*/
-  width: 295px;
-  /*h1{
-      margin-bottom: 5px;
-  }*/
+  width: 80%;
 }
 .menu__description--favori {
   position: relative;
   z-index: 1;
   margin: auto;
-  width: 50px;
+  width: 20%;
   border-radius: 0px 0px 10px 0px;
 }
 .menu__description--favori:hover path {
@@ -397,46 +373,36 @@ svg {
   margin: auto;
 }
 
-/*@keyframes filled-heart{
-    0% {fill-opacity: 0;}
-    100% {fill-opacity: 1;}
-}*/
 path {
   stroke-width: 1.5px;
   stroke: black;
   stroke-opacity: 1;
   fill: none;
-  /* &:hover
-   {
-       fill:url(#colorGradient);
-       stroke-opacity: 0;
-
-   }*/
+  transition: all 1000ms ease-out;
 }
 
 header {
   box-sizing: border-box;
   display: flex;
-  width: 375px;
+  width: 100%;
   height: 51px;
   margin: auto;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 15px;
 }
 
 .logo {
   width: 162px;
-  margin: auto;
+  margin-left: 85px;
+  margin-right: 85px;
 }
 
 .conteneur-principal {
   box-sizing: border-box;
   display: flex;
+  width: 100%;
   flex-direction: column;
   justify-content: center;
-  /*width:345px;*/
-  width: 100%;
   padding: 15px;
   margin: auto;
   background-color: white;
@@ -477,10 +443,9 @@ header {
   }
 }
 .conteneur-principal--grisclair--title {
-  /*background:none;*/
   width: 100%;
 }
-@media (min-width: 707px) {
+@media (min-width: 737px) {
   .conteneur-principal--grisclair--title {
     margin-left: 0;
   }
@@ -584,13 +549,14 @@ header {
 
 .plat {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
   width: 315px;
   height: 63px;
+  justify-content: space-between;
+  align-items: flex-start;
   color: black;
   background-color: white;
   border-radius: 20px;
+  margin: auto;
   margin-bottom: 20px;
 }
 .plat--anim-1 {
@@ -657,6 +623,9 @@ header {
   transition: transform 500ms ease-in-out;
 }
 
+.plat:hover {
+  cursor: pointer;
+}
 .plat:hover .overflow-ellipsis {
   width: 209px;
 }

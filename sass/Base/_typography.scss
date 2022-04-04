@@ -3,12 +3,9 @@ a{
     color:$color-black;
 }
 
-
-
 h1{
     font-family:'Shrikhand',sans-serif;
     font-size: 28px;
-    
 }
 
 h4{
@@ -25,11 +22,23 @@ h4{
 footer a{
     color:$color-white;
     margin-bottom:5px;
-    
 }
 
 footer h1{
     font-size:20px;
+}
+
+.titre__souligne--vert
+{
+    width:38px;
+    overflow: visible;
+    border-bottom: 3px solid $color-tertiary;
+    margin-bottom: 20px;
+    margin-left:10px;
+    p{
+        margin-bottom:10px;
+        margin-top:0;
+    }
 }
 
 .icone-check
@@ -39,7 +48,6 @@ footer h1{
     background-color: $color-tertiary;
     transform:rotate(0);
     transition:transform 500ms ease-in-out;
-   
 }
 
 .overflow-ellipsis{

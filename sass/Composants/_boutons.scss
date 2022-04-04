@@ -7,23 +7,26 @@
     background:none;
     align-items: center;
     box-shadow: 0px 4px 15px 1px #cacaca;
-
     
     &__fonctionnement
     {
         justify-content: flex-start;
         margin-bottom:20px;
+        font-weight: bold;
              
         @include button-layout(329px,73px,$color-black,$color-fond-grisclair,20px);
         
         &--icone{
             font-size:20px;
+            width:20px;
+            height:20px;
             color:$color-icone;
             margin-right:30px;
         }
 
         &--numbericone{
-            @include button-layout(20px,20px,$color-white,$color-primary,20px);
+            @include button-layout(25px,25px,$color-white,$color-primary,25px);
+            font-size: 15px;
             margin-left:-10px;
             margin-right:30px;
         }
@@ -44,12 +47,12 @@
         background:linear-gradient($color-secondary,$color-primary);
         opacity:1;
         box-shadow: 0px 4px 15px 1px #cacaca;
-        transition:box-shadow 500ms ease-in-out;
+        transition:box-shadow 200ms ease-in-out;
 
         &:hover{
             opacity:0.7;
-            box-shadow: 0px 4px 15px 8px #cacaca;
-
+            box-shadow: 0px 4px 15px 8px darken(#cacaca,20%);
+            cursor:pointer;
         }
     }
 }

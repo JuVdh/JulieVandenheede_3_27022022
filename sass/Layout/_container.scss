@@ -2,15 +2,14 @@
 {
     box-sizing:border-box;
     display:flex;
+    width:100%;
     flex-direction:column;
     justify-content:center;
-    /*width:345px;*/
-    width:100%;
     padding:15px;
     margin: auto; 
     background-color: $color-white;
+
     @media(min-width:737px){
-        
         width:345px;
     }        
     
@@ -20,8 +19,7 @@
         width:100%;
         
         @include container-layout($color-black,$color-fond-grisclair,18px);
-        
-               
+                       
         @media(min-width:737px){
             background:none;
             width:345px;
@@ -48,10 +46,9 @@
         }
         &--title
         {
-            /*background:none;*/
             width:100%;
 
-            @media(min-width:707px){
+            @media(min-width:737px){
                margin-left: 0;
             }
         }
@@ -91,23 +88,19 @@
     flex-wrap:wrap;
     margin: auto;
     background-color:$color-fond-grisclair;
+
     @media(min-width:737px){
         background:none;
     }
-    
 }
 
-
 #position{
-   
     border-style: none;
     background:none;
 }
 
 #ville{
-    
     width:150px;
     border-style: none;
     background:none;
-    
 }
