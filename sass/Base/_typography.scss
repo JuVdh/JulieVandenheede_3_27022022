@@ -47,7 +47,7 @@ footer h1{
     color:$color-white;
     background-color: $color-tertiary;
     transform:rotate(0);
-    transition:transform 500ms ease-in-out;
+    transition:transform 1000ms ease-in-out;
 }
 
 .overflow-ellipsis{
@@ -60,5 +60,5 @@ footer h1{
     margin-bottom: 0;
     text-overflow: ellipsis; 
     white-space: nowrap;
-    transition:width 500ms ease-in-out;
+    transition:width 1000ms ease-in-out;
 }
