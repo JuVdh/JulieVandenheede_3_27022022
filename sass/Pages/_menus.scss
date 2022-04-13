@@ -5,10 +5,8 @@
 
 .plat{
     display:flex;
-    width:315px;
-
-    max-width:315px;
-
+    width:325px;
+    max-width: 325px;
     height:63px;
     justify-content: space-between;
     align-items: flex-start;
@@ -35,7 +33,7 @@
         padding-bottom:10px;
 
         h4,p{
-           width:262px;
+          width:262px;
         }
     }
 
@@ -71,6 +69,7 @@
 
     .overflow-ellipsis{
         width:209px;
+       
     }
  
     .plat__prix{

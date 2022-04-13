@@ -23,7 +23,7 @@
     justify-content: space-between;
       
     @media(min-width:737px){
-        width:345px;
+        width:355px;
         margin-bottom: 20px;
     }
        
@@ -35,7 +35,7 @@
 
        @media(min-width:737px){
            border-radius: 20px;
-           width:345px;
+           width:355px;
            padding:15px;
        }
     }
@@ -50,7 +50,7 @@
     flex-wrap:wrap;
 
     @media(min-width:737px){
-        width:345px;
+        width:355px;
         flex:0 1 50%;
     }
 
@@ -77,7 +77,7 @@
     object-fit: cover;
    
     @media(min-width:737px){
-        width:345px;
+        width:355px;
         height:340px;
     }
 }
